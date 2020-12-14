@@ -1,0 +1,523 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.kenarCubugu {
+  width: 260px;
+  height: 1000px;
+  background: #ffffff;
+  align-items: center;
+  text-align: center;
+}
+
+.kenarCubugu .yanBaslik img {
+  width: 80%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.kenarCubugu .kullanici {
+  width: 100%;
+  height: 75px;
+  color: #ffffff;
+  display: flex;
+  margin-top: 20px;
+}
+
+.kenarCubugu .kullanici img {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.kenarCubugu .kullanici .bilgi {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.kenarCubugu .kullanici .bilgi .isim {
+  color: black;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.kenarCubugu .kullanici .bilgi .unvan {
+  color: grey;
+  font-size: 12px;
+}
+
+.kenarCubugu .kontrolPaneli {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+  padding-left: 30px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.kenarCubugu .kontrolPaneli span {
+  padding-left: 10px;
+}
+
+.kenarCubugu .kontrolPaneli .fa-home {
+  padding-right: 30px;
+}
+
+.kenarCubugu .departmanlar {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+  padding-left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.kenarCubugu .departmanlar span {
+  padding-left: 10px;
+}
+
+.kenarCubugu .departmanlar .fa-door-open {
+  padding-right: 30px;
+}
+
+.kenarCubugu .calisanlar {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+  padding-left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.kenarCubugu .calisanlar span {
+  padding-left: 10px;
+}
+
+.kenarCubugu .calisanlar .fa-user-md {
+  padding-right: 32px;
+}
+
+.kenarCubugu .kaynaklar {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+  padding-left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.kenarCubugu .kaynaklar span {
+  padding-left: 10px;
+}
+
+.kenarCubugu .kaynaklar .fa-box {
+  padding-right: 32px;
+}
+
+.kenarCubugu .patentler {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+  padding-left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.kenarCubugu .patentler span {
+  padding-left: 10px;
+}
+
+.kenarCubugu .patentler .fa-scroll {
+  padding-right: 30px;
+}
+
+.kenarCubugu .hesaplama {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+  padding-left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.kenarCubugu .hesaplama span {
+  padding-left: 10px;
+}
+
+.kenarCubugu .hesaplama .fa-calendar-check {
+  padding-right: 32px;
+}
+
+.kenarCubugu .odemeler {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+  padding-left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.kenarCubugu .odemeler span {
+  padding-left: 10px;
+}
+
+.kenarCubugu .odemeler .fa-wallet {
+  padding-right: 31px;
+}
+
+.kenarCubugu .raporlar {
+  background: #ffffff;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+  padding-left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.kenarCubugu .raporlar span {
+  padding-left: 10px;
+}
+
+.kenarCubugu .raporlar .fa-paste {
+  padding-right: 32px;
+}
+
+.kontrolPaneli:hover,
+.departmanlar:hover,
+.calisanlar:hover,
+.kaynaklar:hover,
+.patentler:hover,
+.hesaplama:hover,
+.odemeler:hover,
+.raporlar:hover {
+  background: #e0e0e0;
+  color: #3a9ae6;
+}
+
+.icerik {
+  flex: 1;
+  background: #eceef9;
+  background-position-x: 64%;
+  background-position-y: 80%;
+  background-size: 300px;
+  background-attachment: fixed, scroll;
+}
+
+.icerik .baslik {
+  flex: 1;
+  display: flex;
+  height: 68px;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icerik .baslik .fa-bars {
+  padding-left: 25px;
+  color: #999999;
+}
+
+.icerik .baslik .arama {
+  display: flex;
+  padding-left: 25px;
+}
+
+.icerik .baslik .arama input {
+  width: 220px;
+  height: 30px;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 0;
+  font-size: 14px;
+  color: #000000;
+  padding-left: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.icerik .baslik .arama .fa-search {
+  color: #999999;
+  padding-top: 12px;
+  font-size: 13px;
+}
+
+.icerik .baslik .kullanici img {
+  width: 35px;
+  height: 35px;
+  margin-left: 50px;
+  margin-top: 17px;
+  border-radius: 30px;
+}
+
+.icerik .baslik .kullanici span {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 25px;
+  color: #444444;
+}
+
+.icerik .baslik .kullanici .fa-chevron-down {
+  color: #999999;
+  position: absolute;
+  margin-left: 120px;
+  margin-top: 28px;
+}
+
+.icerik .baslik .kullanici {
+  width: 200px;
+  height: 100%;
+  margin-left: auto !important;
+  padding-right: 70px;
+}
+
+.icerik .baslik .fa-cogs {
+  margin-right: 30px;
+  color: #999999;
+}
+
+.icerik .baslik .bildirim {
+  color: #999999;
+  width: 150px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icerik .baslik .bildirim .baslikMektup .fa-circle {
+  width: 8px;
+  height: 8px;
+  padding-bottom: 10px;
+  color: #fed713;
+  border-radius: 20px;
+}
+
+.icerik .baslik .bildirim .baslikCan .fa-circle {
+  width: 8px;
+  height: 8px;
+  padding-bottom: 10px;
+  color: orange;
+}
+
+.icerik .baslik .bildirim .baslikBayrak .fa-circle {
+  width: 8px;
+  height: 8px;
+  padding-bottom: 10px;
+  color: rgb(226, 49, 49);
+}
+
+.footer {
+  height: 50px;
+  border-top: 1px solid #dee3e9;
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  margin-right: 50px;
+}
+.footer .sol {
+  width: 700px;
+  margin-top: 15px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anaEkran {
+  height: 800px;
+  
+}
+
+.anaEkran .ust {
+  height: 50px;
+}
+
+.anaEkran .ust h1 {
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 18px;
+  padding-left: 30px;
+}
+
+.anaEkran .alt {
+  padding: 50px;
+}
